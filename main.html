@@ -44,7 +44,9 @@
 <body>
     <div class="circle">
     </div>
-
+    <audio controls loops>
+        <source src="background_music_final.mp3" type="audio/mpeg">
+    </audio>
     <script>
         function updateTransition() {
             var el = document.querySelector("div.circle");
@@ -59,8 +61,7 @@
             return el;
         }
 
-        var intervalID = window.setInterval(updateTransition, 4000);
-
+        var intervalID = window.setInterval(updateTransition, 4000);  
     </script>
 </body>
 </html>
