@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meditation</title>
+    <style>
+
+        .circle {
+            top: 50%;
+            left: 50%;
+            width:150px;
+            height:150px;
+            position:absolute;
+            background-color: #00FF79;
+
+
+            margin: -75px 0 0 -75px;
+
+            border: 15px solid #00FF79;
+            border-radius: 85px;
+
+
+            transition-property: width, height, margin, border-radius, border, background-color;
+            transition-duration: 4s;
+            transition-delay: 0s;
+        }
+
+        .circle1{
+            transition-property: width, height, margin, border-radius, border, background-color;
+            transition-duration: 4s;
+            transition-delay: 0s;
+            top: 50%;
+            left: 50%;
+            position:absolute;
+            background-color: #009FB3;
+            width: 300px;
+            height: 300px;
+            border: 15px solid #009FB3;
+            border-radius: 150px;
+            margin: -150px 0 0 -150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+    </div>
+
+    <script>
+        function updateTransition() {
+            var el = document.querySelector("div.circle");
+
+            if (el) {
+            el.className = "circle1";
+            } else {
+            el = document.querySelector("div.circle1");
+            el.className = "circle";
+            }
+
+            return el;
+        }
+
+        var intervalID = window.setInterval(updateTransition, 3000);
+
+    </script>
+</body>
+</html>
