@@ -5,6 +5,4 @@ const nav = require('./nav');
 
 router.use('/', nav);
 
-
-
 module.exports = router;
