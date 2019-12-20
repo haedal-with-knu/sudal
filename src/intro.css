@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.circle_box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle {
+    width: 250px;
+    height: 250px;
+    position:absolute;
+    background-color: #00FF79;
+    border: 15px solid #00FF79;
+    border-radius: 100%;
+    transition-property: width, height, margin, border-radius, border, background-color;
+    transition-duration: 4s;
+    transition-delay: 0s;
+}
+.circle1 {
+    transition-property: width, height, margin, border-radius, border, background-color;
+    transition-duration: 4s;
+    transition-delay: 0s;
+    position:absolute;
+    background-color: #009FB3;
+    width: 400px;
+    height: 400px;
+    border: 15px solid #009FB3;
+    border-radius: 100%;
+}
